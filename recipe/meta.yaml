@@ -15,6 +15,7 @@ build:
     - CMAKE_DOWNLOAD_CGAL=OFF
     - CMAKE_DOWNLOAD_PYBIND11=OFF
     - CMAKE_BUILD_TESTING=OFF
+    - CMAKE_CXX_STANDARD=14
   script: $PYTHON -m pip install -vv --ignore-installed --no-deps .
 
 requirements:
