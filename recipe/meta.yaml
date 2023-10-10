@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/SVMTK/SVMTK/archive/v{{ version }}.tar.gz
   sha256: "8595f2d51dd5f18e68a89499865fc24d8bcc515a704db43aa929f670f6c03821"
+  patches:
+    - 0001-Use-C-14.patch  # [osx]
 
 build:
   skip: true  # [win]
@@ -15,8 +17,7 @@ build:
     - CMAKE_DOWNLOAD_CGAL=OFF
     - CMAKE_DOWNLOAD_PYBIND11=OFF
     - CMAKE_BUILD_TESTING=OFF
-    - CMAKE_CXX_STANDARD=14
-  script: $PYTHON -m pip install -vv --ignore-installed --no-deps .
+  script: {{ PYTHON }} -m pip install -vv --ignore-installed --no-deps .
 
 requirements:
   build:
