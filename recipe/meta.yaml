@@ -31,7 +31,7 @@ requirements:
   host:
     # pin back cgal-cpp due to compatibility issue with 5.5
     - libboost-headers
-    - cgal-cpp 5.4.1
+    - cgal-cpp !=5.5
     - eigen
     - gmp
     - mpfr
