@@ -32,6 +32,7 @@ requirements:
   host:
     - libboost-devel
     - cgal-cpp >=6.0.0
+    - setuptools
     - eigen
     - gmp
     - mpfr
