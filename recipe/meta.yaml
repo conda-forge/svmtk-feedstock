@@ -30,11 +30,9 @@ requirements:
     - python  # [build_platform != target_platform]
     - pybind11  # [build_platform != target_platform]
   host:
-    # pin back cgal-cpp due to compatibility issue with 5.5
-    # boost-cpp must also be pinned to match
-    # these shouldn't interfere much, since they are both used header-only
-    - boost-cpp 1.74
-    - cgal-cpp 5.4.1
+    - libboost-devel
+    - cgal-cpp >=6.0.0
+    - setuptools
     - eigen
     - gmp
     - mpfr
