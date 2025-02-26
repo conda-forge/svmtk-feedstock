@@ -12,7 +12,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   script_env:
     - CMAKE_DOWNLOAD_CGAL=OFF
     - CMAKE_DOWNLOAD_PYBIND11=OFF
